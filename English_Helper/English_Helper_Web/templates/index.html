@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Master ─ 高中英文單字訓練系統（網頁版）</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header class="app-header">
+        <h1>English Master</h1>
+        <p class="subtitle">高中英文單字訓練系統（網頁版）</p>
+    </header>
+
+    <nav class="tabbar">
+        <button class="tab-btn active" data-tab="vocab">單字訓練</button>
+        <button class="tab-btn" data-tab="exam">歷屆題目練習</button>
+        <button class="tab-btn" data-tab="quiz">隨機測驗</button>
+        <button class="tab-btn" data-tab="add">新增單字</button>
+        <button class="tab-btn" data-tab="records">測驗紀錄</button>
+    </nav>
+
+    <main class="container">
+        <!-- ============ 模組1：單字訓練 ============ -->
+        <section id="tab-vocab" class="tab-panel active">
+            <div class="row">
+                <label class="field-label">訓練模式：</label>
+                <label class="radio"><input type="radio" name="vocab-mode" value="ch2en"> 中文 → 英文</label>
+                <label class="radio"><input type="radio" name="vocab-mode" value="en2ch"> 英文 → 中文</label>
+                <label class="radio"><input type="radio" name="vocab-mode" value="mixed" checked> 混合模式</label>
+            </div>
+            <p id="vocab-daily" class="muted"></p>
+            <button id="vocab-start" class="btn-primary block">開始訓練</button>
+
+            <p class="section-title">題目：</p>
+            <div id="vocab-question" class="question-card question-lg"></div>
+            <p id="vocab-hint" class="hint"></p>
+
+            <div id="vocab-options" class="options"></div>
+            <p id="vocab-feedback" class="feedback"></p>
+            <button id="vocab-next" class="btn-primary block" disabled>下一題</button>
+        </section>
+
+        <!-- ============ 模組2：歷屆題目練習 ============ -->
+        <section id="tab-exam" class="tab-panel">
+            <div class="row">
+                <label class="field-label">考試年份：</label>
+                <select id="exam-year">
+                    <option>109</option><option>110</option><option>112</option>
+                    <option>113</option><option>114</option>
+                </select>
+                <label class="field-label">題型：</label>
+                <select id="exam-type">
+                    <option>文意字彙</option><option>綜合測驗</option>
+                </select>
+                <label class="check"><input type="checkbox" id="exam-random" checked> 題序亂數</label>
+            </div>
+            <button id="exam-start" class="btn-primary block">開始練習</button>
+
+            <p class="section-title">題目：</p>
+            <div id="exam-question" class="question-card"></div>
+            <div id="exam-options" class="options"></div>
+            <p id="exam-feedback" class="feedback"></p>
+            <button id="exam-next" class="btn-primary block" disabled>下一題</button>
+
+            <div class="progress"><div id="exam-bar" class="progress-chunk"></div></div>
+            <p id="exam-score" class="muted">目前成績：0/0</p>
+        </section>
+
+        <!-- ============ 模組3：隨機測驗 ============ -->
+        <section id="tab-quiz" class="tab-panel">
+            <div class="row">
+                <label class="field-label">題目數量：</label>
+                <select id="quiz-count">
+                    <option>5</option><option selected>10</option><option>15</option>
+                    <option>20</option><option>25</option><option>30</option>
+                    <option>35</option><option>40</option><option>45</option><option>50</option>
+                </select>
+            </div>
+            <div class="row">
+                <label class="field-label">題型選擇：</label>
+                <label class="check"><input type="checkbox" id="quiz-vocab" checked> 包含單字訓練</label>
+                <label class="check"><input type="checkbox" id="quiz-exam" checked> 包含歷屆試題</label>
+            </div>
+            <div class="row">
+                <button id="quiz-start" class="btn-primary">開始測驗</button>
+                <button id="quiz-reset" class="btn-secondary" disabled>重新測驗</button>
+            </div>
+
+            <div class="progress"><div id="quiz-bar" class="progress-chunk"></div></div>
+            <p id="quiz-score" class="muted">目前成績：0/0</p>
+
+            <p class="section-title">題目：</p>
+            <div id="quiz-question" class="question-card question-lg"></div>
+            <div id="quiz-options" class="options"></div>
+            <p id="quiz-stats" class="muted"></p>
+            <p id="quiz-feedback" class="feedback"></p>
+            <button id="quiz-next" class="btn-primary block" disabled>下一題</button>
+        </section>
+
+        <!-- ============ 模組4：新增單字 ============ -->
+        <section id="tab-add" class="tab-panel">
+            <div class="row">
+                <label class="field-label">輸入英文單字：</label>
+                <input type="text" id="lookup-word" placeholder="例如: appreciate" class="grow">
+                <button id="lookup-btn" class="btn-primary">查詢</button>
+            </div>
+
+            <div class="form-grid">
+                <label>英文：</label><input type="text" id="add-english" readonly>
+                <label>中文：</label><input type="text" id="add-chinese" placeholder="中文翻譯">
+                <label>詞性：</label><input type="text" id="add-pos" placeholder="詞性，例如 noun/verb">
+            </div>
+            <p id="add-message" class="muted"></p>
+            <button id="add-btn" class="btn-primary block" disabled>一鍵加入自訂詞庫</button>
+
+            <h3 class="block-title">自訂詞庫管理</h3>
+            <p class="muted">可直接在表格內修改英文、中文、詞性，修改後按「儲存變更」。</p>
+            <div class="row">
+                <button id="custom-refresh" class="btn-secondary">重新整理</button>
+                <button id="custom-save" class="btn-primary">儲存變更</button>
+                <button id="custom-delete" class="btn-danger">刪除選取</button>
+            </div>
+            <table id="custom-table" class="data-table">
+                <thead><tr><th>英文</th><th>中文</th><th>詞性</th></tr></thead>
+                <tbody></tbody>
+            </table>
+        </section>
+
+        <!-- ============ 模組5：測驗紀錄 ============ -->
+        <section id="tab-records" class="tab-panel">
+            <div class="row">
+                <h3 class="block-title" style="margin:0;">測驗紀錄</h3>
+                <select id="records-type">
+                    <option>全部紀錄</option><option>隨機測驗</option><option>歷屆練習</option>
+                </select>
+                <button id="records-refresh" class="btn-secondary">重新整理</button>
+            </div>
+            <p id="records-summary" class="muted"></p>
+            <table id="records-table" class="data-table">
+                <thead><tr>
+                    <th>完成時間</th><th>完成項目</th><th>類型</th>
+                    <th>題目數量</th><th>正確題數</th><th>正確率</th>
+                </tr></thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

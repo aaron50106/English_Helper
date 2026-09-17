@@ -1,0 +1,48 @@
+2026-09-17 22:05:32,103 [INFO] english_helper.data: Loaded custom vocabulary count=0
+2026-09-17 22:05:32,109 [INFO] english_helper.data: Loaded training records count=0
+2026-09-17 22:05:32,116 [INFO] english_helper.data: Saved daily vocab stats date=2026-09-17 answered=0 correct=0 wrong=0
+2026-09-17 22:05:32,117 [INFO] english_helper.data: Created new daily vocab stats file date=2026-09-17
+2026-09-17 22:05:32,117 [INFO] english_helper.data: DataManager initialized
+2026-09-17 22:05:32,603 [INFO] english_helper.data: Loaded exam questions from excel count=240
+2026-09-17 22:05:32,604 [INFO] english_helper.training: TrainingEngine initialized
+2026-09-17 22:05:33,495 [INFO] english_helper.training: Generated vocabulary question mode=ch2en word_id=1047
+2026-09-17 22:05:33,496 [INFO] english_helper.web: Web vocab question mode=ch2en
+2026-09-17 22:05:33,498 [INFO] english_helper.data: Saved daily vocab stats date=2026-09-17 answered=1 correct=0 wrong=1
+2026-09-17 22:05:33,498 [INFO] english_helper.web: Web vocab answer option=A correct=False
+2026-09-17 22:05:33,500 [INFO] english_helper.web: Web exam start year=114 type=文意字彙 total=20
+2026-09-17 22:05:33,501 [INFO] english_helper.web: Web exam answer option=A correct=True
+2026-09-17 22:05:33,503 [INFO] english_helper.training: Random quiz started total=5 include_vocab=True include_exam=True
+2026-09-17 22:05:33,504 [INFO] english_helper.training: Generated vocabulary question mode=en2ch word_id=1059
+2026-09-17 22:05:33,504 [INFO] english_helper.training: Generated exam question year=110 type=綜合測驗 number=7
+2026-09-17 22:05:33,504 [INFO] english_helper.training: Generated exam question year=113 type=文意字彙 number=11
+2026-09-17 22:05:33,505 [INFO] english_helper.training: Generated vocabulary question mode=en2ch word_id=1094
+2026-09-17 22:05:33,505 [INFO] english_helper.training: Generated vocabulary question mode=ch2en word_id=1040
+2026-09-17 22:05:33,505 [INFO] english_helper.training: Random quiz question pool prepared count=5
+2026-09-17 22:05:33,505 [INFO] english_helper.web: Web quiz start count=5 vocab=True exam=True
+2026-09-17 22:05:33,507 [INFO] english_helper.training: Answer submitted index=0 type=vocabulary user=A correct=False
+2026-09-17 22:05:33,507 [INFO] english_helper.web: Web quiz answer option=A correct=False
+2026-09-17 22:05:33,508 [INFO] english_helper.training: Quiz session reset
+2026-09-17 22:05:33,510 [INFO] english_helper.data: Saved custom vocabulary count=0
+2026-09-17 22:05:33,511 [INFO] english_helper.data: Replaced custom vocabulary count=0
+2026-09-17 22:05:33,511 [INFO] english_helper.web: Web custom save count=0
+2026-09-17 22:07:07,710 [INFO] english_helper.data: Loaded custom vocabulary count=0
+2026-09-17 22:07:07,711 [INFO] english_helper.data: Loaded training records count=0
+2026-09-17 22:07:07,717 [INFO] english_helper.data: Loaded daily vocab stats date=2026-09-17 answered=1 correct=0 wrong=1
+2026-09-17 22:07:07,717 [INFO] english_helper.data: DataManager initialized
+2026-09-17 22:07:07,948 [INFO] english_helper.data: Loaded exam questions from excel count=240
+2026-09-17 22:07:07,948 [INFO] english_helper.training: TrainingEngine initialized
+2026-09-17 22:07:07,956 [INFO] english_helper.web: Starting English Helper web server on http://127.0.0.1:5000
+2026-09-17 22:35:14,146 [INFO] english_helper.training: Generated vocabulary question mode=ch2en word_id=1061
+2026-09-17 22:35:14,147 [INFO] english_helper.web: Web vocab question mode=ch2en
+2026-09-17 22:35:16,703 [INFO] english_helper.data: Saved daily vocab stats date=2026-09-17 answered=2 correct=1 wrong=1
+2026-09-17 22:35:16,704 [INFO] english_helper.web: Web vocab answer option=D correct=True
+2026-09-17 22:35:17,214 [INFO] english_helper.training: Generated vocabulary question mode=en2ch word_id=1018
+2026-09-17 22:35:17,214 [INFO] english_helper.web: Web vocab question mode=en2ch
+2026-09-17 22:35:21,600 [INFO] english_helper.data: Saved daily vocab stats date=2026-09-17 answered=3 correct=1 wrong=2
+2026-09-17 22:35:21,600 [INFO] english_helper.web: Web vocab answer option=B correct=False
+2026-09-17 22:35:24,469 [INFO] english_helper.training: Generated vocabulary question mode=ch2en word_id=1054
+2026-09-17 22:35:24,469 [INFO] english_helper.web: Web vocab question mode=ch2en
+2026-09-17 22:35:25,052 [INFO] english_helper.data: Saved daily vocab stats date=2026-09-17 answered=4 correct=1 wrong=3
+2026-09-17 22:35:25,052 [INFO] english_helper.web: Web vocab answer option=B correct=False
+2026-09-17 22:35:26,056 [INFO] english_helper.training: Generated vocabulary question mode=en2ch word_id=1006
+2026-09-17 22:35:26,056 [INFO] english_helper.web: Web vocab question mode=en2ch

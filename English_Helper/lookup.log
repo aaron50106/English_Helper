@@ -1,0 +1,86 @@
+2026-09-16 14:48:17,764 [INFO] Lookup start: apple
+2026-09-16 14:48:24,074 [ERROR] Timeout when requesting https://api.dictionaryapi.dev/api/v2/entries/en/apple
+2026-09-16 14:48:24,074 [WARNING] Dictionary API unavailable or empty for word: apple
+2026-09-16 14:48:25,010 [INFO] Lookup done: apple (dict=False, has_chinese=True)
+2026-09-16 14:48:44,850 [INFO] Lookup start: chinese
+2026-09-16 14:48:51,174 [ERROR] Timeout when requesting https://api.dictionaryapi.dev/api/v2/entries/en/chinese
+2026-09-16 14:48:51,175 [WARNING] Dictionary API unavailable or empty for word: chinese
+2026-09-16 14:48:52,090 [INFO] Lookup done: chinese (dict=False, has_chinese=True)
+2026-09-16 14:49:02,456 [INFO] Lookup start: hello
+2026-09-16 14:49:08,772 [ERROR] Timeout when requesting https://api.dictionaryapi.dev/api/v2/entries/en/hello
+2026-09-16 14:49:08,773 [WARNING] Dictionary API unavailable or empty for word: hello
+2026-09-16 14:49:09,682 [INFO] Lookup done: hello (dict=False, has_chinese=True)
+2026-09-16 14:49:35,649 [INFO] Lookup start: optimistic
+2026-09-16 14:49:41,956 [ERROR] Timeout when requesting https://api.dictionaryapi.dev/api/v2/entries/en/optimistic
+2026-09-16 14:49:41,956 [WARNING] Dictionary API unavailable or empty for word: optimistic
+2026-09-16 14:49:42,913 [INFO] Lookup done: optimistic (dict=False, has_chinese=True)
+2026-09-16 14:51:00,411 [INFO] Lookup start: apple
+2026-09-16 14:51:06,787 [ERROR] Timeout when requesting https://api.dictionaryapi.dev/api/v2/entries/en/apple
+2026-09-16 14:51:06,787 [WARNING] Dictionary API unavailable or empty for word: apple
+2026-09-16 14:51:08,928 [INFO] Lookup done: apple (dict=False, has_chinese=True)
+2026-09-16 14:51:08,928 [INFO] Lookup start: abandon
+2026-09-16 14:51:10,493 [INFO] Lookup done: abandon (dict=True, has_chinese=True)
+2026-09-16 14:53:18,583 [INFO] Lookup start: concatenate
+2026-09-16 14:53:24,908 [ERROR] Timeout when requesting https://api.dictionaryapi.dev/api/v2/entries/en/concatenate
+2026-09-16 14:53:24,909 [WARNING] Dictionary API unavailable or empty for word: concatenate
+2026-09-16 14:53:26,275 [INFO] Lookup done: concatenate (dict=False, has_chinese=True)
+2026-09-16 15:03:31,968 [INFO] Lookup start: concatenate
+2026-09-16 15:03:38,283 [ERROR] Timeout when requesting https://api.dictionaryapi.dev/api/v2/entries/en/concatenate
+2026-09-16 15:03:38,284 [WARNING] Dictionary API unavailable or empty for word: concatenate
+2026-09-16 15:03:39,286 [INFO] Lookup done: concatenate (dict=False, has_chinese=True)
+2026-09-16 15:03:58,252 [INFO] Lookup start: concatenate
+2026-09-16 15:04:04,573 [ERROR] Timeout when requesting https://api.dictionaryapi.dev/api/v2/entries/en/concatenate
+2026-09-16 15:04:04,574 [WARNING] Dictionary API unavailable or empty for word: concatenate
+2026-09-16 15:04:05,488 [INFO] Lookup done: concatenate (dict=False, has_chinese=True)
+2026-09-16 15:04:23,164 [INFO] Lookup start: concatenate
+2026-09-16 15:04:29,472 [ERROR] Timeout when requesting https://api.dictionaryapi.dev/api/v2/entries/en/concatenate
+2026-09-16 15:04:29,472 [WARNING] Dictionary API unavailable or empty for word: concatenate
+2026-09-16 15:04:30,452 [INFO] Lookup done: concatenate (dict=False, has_chinese=True)
+2026-09-16 15:06:39,100 [INFO] Lookup start: concatenate
+2026-09-16 15:06:45,405 [ERROR] Timeout when requesting https://api.dictionaryapi.dev/api/v2/entries/en/concatenate
+2026-09-16 15:06:45,406 [WARNING] Dictionary API unavailable or empty for word: concatenate
+2026-09-16 15:06:46,476 [INFO] Lookup done: concatenate (dict=False, has_chinese=True)
+2026-09-16 15:09:16,640 [INFO] Lookup start: concatenate
+2026-09-16 15:09:23,010 [ERROR] Timeout when requesting https://api.dictionaryapi.dev/api/v2/entries/en/concatenate
+2026-09-16 15:09:23,010 [WARNING] Dictionary API unavailable or empty for word: concatenate
+2026-09-16 15:09:24,110 [INFO] Lookup done: concatenate (dict=False, has_chinese=True)
+2026-09-16 15:09:35,518 [INFO] Lookup start: apple
+2026-09-16 15:09:41,840 [ERROR] Timeout when requesting https://api.dictionaryapi.dev/api/v2/entries/en/apple
+2026-09-16 15:09:41,841 [WARNING] Dictionary API unavailable or empty for word: apple
+2026-09-16 15:09:42,777 [INFO] Lookup done: apple (dict=False, has_chinese=True)
+2026-09-16 15:15:11,132 [ERROR] Timeout when requesting https://api.dictionaryapi.dev/api/v2/entries/en/apple
+2026-09-16 15:15:11,193 [INFO] Provider health check: {'wiktionary': {'ok': 'True', 'fail_count': '0', 'cooldown_until': '0', 'last_error': ''}, 'dictionaryapi': {'ok': 'False', 'fail_count': '1', 'cooldown_until': '1789543091', 'last_error': 'timeout'}, 'datamuse': {'ok': 'True', 'fail_count': '0', 'cooldown_until': '0', 'last_error': ''}}
+2026-09-16 15:15:11,194 [INFO] Lookup start: concatenate
+2026-09-16 15:15:11,426 [INFO] Dictionary provider selected provider=wiktionary word=concatenate
+2026-09-16 15:15:30,196 [ERROR] Timeout when requesting https://api.dictionaryapi.dev/api/v2/entries/en/apple
+2026-09-16 15:15:30,296 [INFO] Provider health check: {'wiktionary': {'ok': 'True', 'fail_count': '0', 'cooldown_until': '0', 'last_error': ''}, 'dictionaryapi': {'ok': 'False', 'fail_count': '1', 'cooldown_until': '1789543110', 'last_error': 'timeout'}, 'datamuse': {'ok': 'True', 'fail_count': '0', 'cooldown_until': '0', 'last_error': ''}}
+2026-09-16 15:15:30,297 [INFO] Lookup start: concatenate
+2026-09-16 15:15:30,523 [INFO] Dictionary provider selected provider=wiktionary word=concatenate
+2026-09-16 15:15:31,374 [INFO] Lookup done: concatenate (dict=True, has_chinese=True)
+2026-09-16 15:15:31,374 [INFO] Lookup start: apple
+2026-09-16 15:15:31,612 [INFO] Dictionary provider selected provider=wiktionary word=apple
+2026-09-16 15:15:32,565 [INFO] Lookup done: apple (dict=True, has_chinese=True)
+2026-09-16 15:15:32,566 [INFO] Lookup start: abandon
+2026-09-16 15:15:32,782 [INFO] Dictionary provider selected provider=wiktionary word=abandon
+2026-09-16 15:15:33,629 [INFO] Lookup done: abandon (dict=True, has_chinese=True)
+2026-09-16 15:15:45,101 [INFO] Lookup start: concatenate
+2026-09-16 15:15:45,331 [INFO] Dictionary provider selected provider=wiktionary word=concatenate
+2026-09-16 15:15:46,146 [INFO] Lookup done: concatenate (dict=True, has_chinese=True)
+2026-09-16 15:16:02,764 [INFO] Lookup start: continue
+2026-09-16 15:16:03,726 [INFO] Dictionary provider selected provider=wiktionary word=continue
+2026-09-16 15:16:04,716 [INFO] Lookup done: continue (dict=True, has_chinese=True)
+2026-09-16 15:17:38,246 [INFO] Lookup start: continue
+2026-09-16 15:17:38,523 [INFO] Dictionary provider selected provider=wiktionary word=continue
+2026-09-16 15:17:39,576 [INFO] Lookup done: continue (dict=True, has_chinese=True)
+2026-09-16 15:17:59,227 [INFO] Lookup start: average
+2026-09-16 15:17:59,439 [INFO] Dictionary provider selected provider=wiktionary word=average
+2026-09-16 15:18:00,601 [INFO] Lookup done: average (dict=True, has_chinese=True)
+2026-09-16 15:18:41,201 [INFO] Lookup start: lighter
+2026-09-16 15:18:44,150 [INFO] Dictionary provider selected provider=wiktionary word=lighter
+2026-09-16 15:18:45,242 [INFO] Lookup done: lighter (dict=True, has_chinese=True)
+2026-09-16 15:22:29,457 [INFO] Lookup start: lighter
+2026-09-16 15:22:29,879 [INFO] Dictionary provider selected provider=wiktionary word=lighter
+2026-09-16 15:22:30,815 [INFO] Lookup done: lighter (dict=True, has_chinese=True)
+2026-09-16 15:22:30,816 [INFO] Lookup start: average
+2026-09-16 15:22:31,035 [INFO] Dictionary provider selected provider=wiktionary word=average
+2026-09-16 15:22:31,935 [INFO] Lookup done: average (dict=True, has_chinese=True)
